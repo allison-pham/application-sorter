@@ -8,6 +8,10 @@ application_df = pd.read_csv(file_path)
 # Counter
 subject_counter = Counter(list(df['Subject(s) of interest for research (Please check the above document attached)']))
 
+# Count each subject
+for subject, count in subject_counter.items():
+    print(f"Subject: {subject}\tNumber of Respondents: {count}")
+
 # Archive
 # df = pd.read_csv('research_program_responses.csv') # Adjust file path
 
