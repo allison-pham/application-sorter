@@ -10,10 +10,10 @@ application_df = read_file(file_path)
 subject_counter = count_subjects(application_df)
 groups = create_groups(subject_counter)
 
+# New file
 sorted_groups = pd.DataFrame(groups)
 save_file(sorted_groups, 'sorted_groups.csv')
 
-# Archive
 # df = pd.read_csv('research_program_responses.csv') # Adjust file path
 
 # subject_counter = df['Subject(s) of interest for research (Please check the above document attached)'].value_counts()
